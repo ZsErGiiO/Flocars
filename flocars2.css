@@ -1,0 +1,722 @@
+/* Importación de la fuente */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", serif;
+}
+
+/* HEADER */
+.detalles-header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.detalles-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.detalles-header .precio {
+  font-size: 1.8rem;
+  color: #0a7f33;
+  margin-top: 10px;
+}
+
+/* Contenedor para la imagen y las características */
+.detalles-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 21%;
+  margin-top: 50px;
+  
+}
+
+/* Columna para la imagen */
+.detalles-imagen {
+  max-width: 900px;
+  text-align: center;
+  margin-left: 30%;
+  border: 1px solid #000000;  /* Borde verde para resaltar */
+}
+
+/* Carrusel */
+.carrusel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 30px auto;
+  overflow: hidden;  /* Ocultar imágenes que no deben verse */
+}
+
+.carrusel .carrusel-imagenes {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;  /* El contenedor de las imágenes debe ocupar todo el ancho disponible */
+}
+
+.carrusel .imagen-carrusel {
+  width: 100%;  /* Cada imagen debe ocupar el 100% del ancho del contenedor */
+  height: 600px;
+  object-fit: cover;  /* Ajustar la imagen para cubrir el área del contenedor */
+}
+
+/* Miniaturas debajo del carrusel */
+.carrusel .miniaturas {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.carrusel .miniatura {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.carrusel .miniatura:hover {
+  opacity: 1;
+}
+
+.carrusel .prev-btn,
+.carrusel .next-btn {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.carrusel .prev-btn {
+  left: 10px;
+}
+
+.carrusel .next-btn {
+  right: 10px;
+}
+
+/* Estilo de los botones prev/next */
+.carrusel .prev-btn,
+.carrusel .next-btn {
+  font-size: 40px;  /* Tamaño más grande */
+  padding: 15px;  /* Aumentar el tamaño del botón */
+  border-radius: 50%;  /* Hacer los botones circulares */
+  border: none;
+  transition: background-color 0.3s;
+}
+
+
+/* Miniaturas seleccionadas */
+.carrusel .miniatura.selected {
+  border: 2px solid #ff0000;
+  opacity: 1;
+}
+
+/* Columna para las características */
+.detalles-caracteristicas {
+  flex: 1;
+  max-width: 500px;  /* Limitar el ancho máximo */
+  border: 1px solid #000000;  /* Borde negro */
+  padding: 20px;  /* Espaciado interior */
+  background-color: #f9f9f9;  /* Fondo gris claro */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+  margin-left: auto;  /* Centrar el contenedor */
+  margin-right: auto;  /* Centrar el contenedor */
+}
+
+.caracteristicas {
+  margin-top: 20px;
+
+}
+
+.caracteristicas h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.caracteristicas ul {
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+.caracteristicas li {
+  margin-bottom: 10px;
+}
+
+.caracteristicas p {
+  font-size: 35px;
+}
+
+.info-coche p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.info-coche strong {
+  font-weight: bold; /* Asegura que los nombres de las características sean negritas */
+}
+
+.btn-reservar {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #333; /* Color de fondo oscuro para el botón */
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-reservar:hover {
+  background-color: #555; /* Cambia el color del botón cuando se pasa el mouse */
+}
+
+/* Etiquetas Medioambientales */
+.etiqueta-ambiental {
+  margin-top: 30px;
+}
+
+.etiqueta-ambiental h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: left; /* Alinea el texto a la izquierda */
+  margin-top: 30px;
+}
+
+.etiqueta-ambiental img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Botones de acción */
+.acciones {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.acciones .btn-contacto,
+.acciones .btn-vermas {
+  padding: 15px 25px;
+  background-color: #ff0000;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.acciones .btn-contacto:hover,
+.acciones .btn-vermas:hover {
+  background-color: #000000;
+}
+
+/* FOOTER */
+
+.footer1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(90deg, #ff0000, #000000);
+  padding: 10px 0;
+  margin-top: 187px;
+}
+
+.footer2 .imgfooter {
+  width: 100px;
+  height: auto;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(90deg, #ff0000, #000000);
+  padding: 10px 0;
+  margin-top: 387px;
+}
+
+.footer2 .imgfooter {
+  width: 100px;
+  height: auto;
+}
+
+.footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(90deg, #ff0000, #000000);
+  padding: 10px 0;
+  margin-top: 507px;
+}
+
+.footer3 .imgfooter {
+  width: 100px;
+  height: auto;
+}
+
+.footer4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(90deg, #ff0000, #000000);
+  padding: 10px 0;
+  margin-top: 182px;
+}
+
+.footer4 .imgfooter {
+  width: 100px;
+  height: auto;
+}
+
+.detalles-adicionales {
+  
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 960px; /* Establece un ancho máximo para el contenedor */
+  margin-left: 23%;
+  margin-right: auto; /* Centra el contenedor */
+}
+
+.detalles-adicionales h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.columnas-adicionales {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Reducido el espacio entre las filas de columnas */
+}
+
+.columna {
+  flex-basis: 30%; /* Controla el ancho base de cada columna */
+  max-width: 33%;  /* Establece un ancho máximo */
+  padding: 0 10px; /* Espaciado interno más controlado */
+  font-size: 1.1rem;
+  margin: 0; /* Elimina los márgenes extra */
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #5c5b5b;
+}
+
+.columna strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.columnas-adicionales .columna:last-child {
+  margin-right: 0; /* Elimina el margen derecho en la última columna */
+}
+
+hr {
+  border: none; /* Elimina el borde por defecto */
+  border-top: 1px solid black; /* Añade una línea superior negra */
+  margin: 20px 0; /* Espaciado alrededor de la línea */
+}
+
+.btn-reservar {
+  display: block;
+  width: 100%; /* El botón ocupa todo el ancho disponible */
+  padding: 20px; /* Aumentar la altura y hacer el botón más gordito */
+  background-color: #ff0000; /* Color de fondo inicial */
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 1.4rem; /* Aumentar el tamaño del texto para que sea más visible */
+  margin-top: 20px; /* Separar del contenido anterior */
+  cursor: pointer;
+  border-radius: 8px; /* Bordes redondeados para hacerlo más suave */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  margin-top: 50px;
+}
+
+.btn-reservar:hover {
+  background-color: #000000; /* Cambio de color al pasar el mouse */
+}
+
+
+
+.titulo-precio {
+  
+  font-size: 8px; /* Ajusta el tamaño de la fuente */
+  margin-bottom: 5px; /* Añadir algo de espacio entre el título y el precio */
+  margin-top: 30px;
+}
+
+/* Formulario de registro */
+.main-registro {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+form input {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+}
+
+form button {
+  padding: 12px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #000;
+}
+
+form .error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+form .success {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+}
+
+form div {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+form div a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+form div a:hover {
+  text-decoration: underline;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    padding-left: 30px; /* Espacio para el ícono */
+    width: 100%;
+    padding: 10px;
+}
+
+.input-container label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* Ajusta el tamaño del ícono */
+}
+
+.input-container input {
+    width: calc(100% - 30px); /* Ajusta el tamaño del input para no sobresalir */
+}
+
+.icono {
+  width: 20px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  vertical-align: middle; /* Alinea la imagen con el texto */
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+label {
+  display: flex;
+  align-items: center; /* Alinea el ícono con el texto */
+}
+
+.letra_usuario {
+  color: #ccc;
+}
+
+/* Estilo para el mensaje de éxito */
+.exito {
+  background-color: #4CAF50; /* Verde de éxito */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 5px;
+  max-width: 600px; /* Ancho máximo del mensaje */
+  width: 90%; /* Establece el ancho en un porcentaje, para que sea responsivo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+  transition: opacity 0.3s ease-in-out; /* Transición suave */
+}
+
+.exito:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Animación para mostrar el mensaje */
+.exito {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Animación para el mensaje */
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.informacion-garantia {
+  margin-top: 25px;
+}
+
+.garantia-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.garantia-contenido img {
+  max-width: 50px; /* Ajusta el tamaño máximo de la imagen */
+  height: auto;
+  margin-right: 10px; /* Menos espacio entre la imagen y el texto */
+}
+
+.detalles-garantia {
+  width: 100%;
+}
+
+.lista-garantias {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px; /* Tamaño de la fuente más pequeño */
+}
+
+.lista-garantias li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Espacio entre las listas */
+}
+
+.lista-garantias li img.check {
+  width: 21px; /* Tamaño más pequeño para los iconos de check */
+  height: 21px; /* Mantener la relación */
+  margin-right: 6px; /* Espacio más pequeño entre el icono y el texto */
+}
+
+.texto-recogida {
+  margin-top: 35px;
+}
+
+@media (max-width: 1920px) {
+  
+
+  .detalles-imagen {
+    max-width: 45%; /* Reducir el tamaño de la imagen */
+  }
+
+  .detalles-caracteristicas {
+    max-width: 45%; /* Reducir el tamaño del contenedor de características */
+  }
+
+  .carrusel .imagen-carrusel {
+    height: 520px; /* Ajustar la altura para pantallas grandes */
+  }
+
+  .caracteristicas p {
+    font-size: 1.5rem; /* Reducir el tamaño del texto */
+  }
+
+  .btn-reservar {
+    font-size: 1rem; /* Ajustar el tamaño del botón */
+    margin-top: 0px;
+  }
+
+  /* Ajustes para pantallas de 1440px */
+@media screen and (max-width: 1440px) {
+  .detalles-contenido {
+    margin-right: 18.5%;
+  }
+
+  .detalles-imagen {
+    max-width: 42%;
+  }
+
+  .detalles-caracteristicas {
+    max-width: 55%;
+  }
+  .carrusel .miniatura {
+    width: 70px;
+    height: 70px;
+  }
+  .carrusel .imagen-carrusel {
+    height: 420px;
+  }
+
+  .caracteristicas p {
+    font-size: 1.4rem;
+  }
+
+  .caracteristicas h2 {
+    font-size: 1rem;
+  }
+
+  .btn-reservar {
+    font-size: 1rem;
+    margin-top: -30px;
+  }
+}
+
+/* Ajustes para pantallas de 1366px */
+@media screen and (max-width: 1366px) {
+  .detalles-contenido {
+    margin-right: 10%;
+  }
+
+  .detalles-imagen {
+    max-width: 40%;
+  }
+
+  .detalles-caracteristicas {
+    max-width: 60%;
+  }
+
+  .carrusel .imagen-carrusel {
+    height: 400px;
+  }
+
+  .caracteristicas p {
+    font-size: 1.4rem;
+  }
+
+  .btn-reservar {
+    font-size: 1.4rem;
+  }
+}
+
+/* Ajustes para pantallas de 1024px */
+@media screen and (max-width: 1024px) {
+  .detalles-contenido {
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detalles-imagen,
+  .detalles-caracteristicas {
+    max-width: 90%;
+  }
+
+  .carrusel .imagen-carrusel {
+    height: 450px;
+  }
+
+  .caracteristicas p {
+    font-size: 1.3rem;
+  }
+
+  .btn-reservar {
+    font-size: 1.3rem;
+  }
+}
+
+/* Ajustes para pantallas de 768px */
+@media screen and (max-width: 768px) {
+  .detalles-contenido {
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detalles-imagen,
+  .detalles-caracteristicas {
+    max-width: 90%;
+  }
+
+  .carrusel .imagen-carrusel {
+    height: 400px;
+  }
+
+  .caracteristicas p {
+    font-size: 1.2rem;
+  }
+
+  .btn-reservar {
+    font-size: 1.2rem;
+  }
+
+  
+}
+}
+
