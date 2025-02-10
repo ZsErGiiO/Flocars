@@ -9,7 +9,7 @@ session_start(); // Inicia la sesión
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Flocars</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -32,7 +32,7 @@ session_start(); // Inicia la sesión
         <div class="overlay">
             <img src="Diseño_Logos/Diseño Logo Flocars Fondo.png">
             <h1 class="subtitle">¡Hola!</h1>
-            <h1 class="title">Esta página es solo una demostración de mi capacidad sin ánimo de lucro hacia ninguna página</h1>
+            <h1 class="title">Esta página es solo una demostración de mis habilidades. Sin ánimo de lucro.</h1>
         </div>
     </section>
 
@@ -43,8 +43,8 @@ session_start(); // Inicia la sesión
     
     <li><a href="CompraCoche.php">Comprar Coche</a></li>
     <li><a href="ReservaCoche.php">Vehículos Reservados</a></li>
-    <li><a href="#">Nosotros</a></li>
-    <li><a href="#">Contacto</a></li>
+    <li><a href="Nosotros.php">Nosotros</a></li>
+    <li><a href="Contacto.php">Contacto</a></li>
 
     
 
@@ -104,28 +104,25 @@ session_start(); // Inicia la sesión
 
     <section class="contenedor">
 
-    <div class="CocheContainer">
-    <div class="CocheItem">
-        <img class="CochePortada" src="Imagenes Coches/1001 img 01.png" alt="Coche 1">
-        <br><br>
-        <a href="CompraCoche.php"><button class="boton">COMPRAR COCHE</button></a>
-    </div>
-    <div class="CocheItem">
-        <img class="CochePortada" src="Imagenes Coches/1007 img 01.png" alt="Coche 2">
-        <br><br>
-        <a href="ReservaCoche.php"><button class="boton">VEHICULOS RESERVADOS</button>
-    </div>
-    <div class="CocheItem">
-        <img class="CochePortada" src="Imagenes Coches/1001 img 01.png" alt="Coche 3">
-        <br><br>
-        <button class="boton">VENDE TU VEHICULO</button>
-    </div>
-</div>
+        <div class="CocheContainer">
+            <div class="CocheItem">
+                <img class="CochePortada" src="Imagenes Coches/1001 img 01.png" alt="Coche 1">
+                <br><br>
+                <a href="CompraCoche.php"><button class="boton">COMPRAR COCHE</button></a>
+            </div>
+            <div class="CocheItem">
+                <img class="CochePortada" src="Imagenes Coches/1007 img 01.png" alt="Coche 2">
+                <br><br>
+                <a href="ReservaCoche.php"><button class="boton">VEHICULOS RESERVADOS</button></a>
+            </div>
+            <div class="CocheItem">
+                <img class="CochePortada" src="Imagenes Coches/1009 img 01.png" alt="Coche 1">
+                <br><br>
+                <a href="CompraCoche.php"><button class="boton">COMPRAR COCHE</button></a>
+            </div>
+    
+        </div>
 
-         
-
-
-        
     </section>
 
     <footer class="footer2">

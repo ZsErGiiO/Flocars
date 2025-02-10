@@ -52,25 +52,68 @@ $conn->close();
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Registro</title>
     <link rel="stylesheet" href="flocars.css">
     <link rel="stylesheet" href="flocars2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 </head>
 <body>
 
 <header class="header2">
+    <!-- Menú de navegación para pantallas grandes -->
     <div class="navegacion">
+  <ul>
+    <li><a href="flocars.php"><img class="foto" src="Diseño_Logos/Diseño Logo Flocars Fondo.png" alt="Logo Flocars"></a></li>
+    <li><a href="CompraCoche.php">Comprar Coche</a></li>
+    <li><a href="ReservaCoche.php">Vehículos Reservados</a></li>
+    <li><a href="#">Nosotros</a></li>
+    <li><a href="#">Contacto</a></li>
+
+    
+
+    <!-- Menú de registro / inicio sesión -->
+    <li class="menu-login">
+      <?php if (isset($_SESSION['nombre_usuario'])): ?>
+        <!-- Si el usuario está logueado -->
+        <li class="pos">¡Hola, <?php echo $_SESSION['nombre_usuario']; ?>!</li>
+        <li class="pos"><a href="cerrar_sesion.php">Cerrar sesión</a></li>
+      <?php else: ?>
+        <div class="reg">
+            <a  href="Registro.php">Registrarme</a>
+            <a href="sesion.php">Iniciar sesión</a>
+      </div>
+      <?php endif; ?>
+    </li>
+  </ul>
+</div>
+
+
+    <!-- Menú de navegación para pantallas pequeñas -->
+    <div class="navegacion-movil">
         <ul>
-            <li><a href="flocars.php"><img class="foto" src="Diseño_Logos/Diseño Logo Flocars Fondo.png" alt="Logo Flocars"></a></li>
-            <li><a href="CompraCoche.php">Comprar Coche</a></li>
-            <li><a href="ReservaCoche.php">Vehiculos Reservados</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
-            <ul class="reg">
-                <li><a href="Registro.php">Registrarme</a></li>
-                <li><a class="pos"href="sesion.php">Iniciar Sesión</a></li>
-            </ul>
+            <li><a href="flocars.php"><img class="foto2" src="Diseño_Logos/Diseño Logo Flocars Fondo.png" alt="Logo Flocars"></a></li>
+            <li class="menu-desplegable">
+                <a class="simbolo-menu"href="#">
+                <i class="fa fa-bars"></i> <!-- Ícono de usuario -->
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="CompraCoche.php">Comprar Coche</a></li>
+                    <li><a href="ReservaCoche.php">Vehículos Reservados</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </li>
+            <li class="menu-desplegable">
+                <a class="simbolo-usuario" href="#">
+                    <i class="fa fa-user"></i> <!-- Ícono de usuario -->
+                </a>
+                <ul class="sub-menu">
+                    <li><a href="Registro.php">Registrarme</a></li>
+                    <li><a href="sesion.php">Iniciar Sesión</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </header>

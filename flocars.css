@@ -54,7 +54,6 @@
   left: 85%;
   transform: translateX(-50%);
   z-index: 10;
-  
 }
 
 .foto {
@@ -65,12 +64,10 @@
   width: 300px;
 }
 .navegacion .reg {
-  position: absolute;
+  position: relative;
   right: -115%;
   transform: translateX(-50%);
   z-index: 10;
-  
-  
 }
 
 .pos{
@@ -78,7 +75,6 @@
   right: -15%;
   transform: translateX(-50%);
   z-index: 10;
-  
 }
 
 .navegacion ul {
@@ -92,7 +88,6 @@
   margin-top: 50px;
   color: #fff;
   font-size: 25px;
-  
 }
 
 .menu-login .reg {
@@ -106,9 +101,6 @@
   font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
-  
-  
-  
 }
 
 .navegacion a:hover {
@@ -151,7 +143,7 @@
   white-space: nowrap;
   margin-bottom: 150px;
   top: 40%;
-  width: 92.5ch;
+  width: 75ch;
   z-index: 3;
   letter-spacing: 3px;
   text-shadow: 2px 2px 1px #000;
@@ -160,7 +152,6 @@
   font-weight: bold;
   animation: typing 1.5s steps(15), blink .5s infinite step-end alternate;
   overflow: hidden;
-  
 }
 
 
@@ -209,7 +200,7 @@ footer {
 
 .CocheItem {
   width: 550px;  /* Ajuste el tamaño de los contenedores */
-  height: 500px; /* Ajuste el tamaño para dejar espacio para los botones */
+  height: 400px; /* Ajuste el tamaño para dejar espacio para los botones */
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Espacio entre los elementos (imagen y botones) */
@@ -620,6 +611,50 @@ form button:hover {
   margin-top: 13px;
   margin-bottom: 10px;
 }
+main {
+  padding: 40px 20px;
+}
+.nosotros {
+  background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0px 8px rgba(6, 6, 6, 6.1);
+    max-width: 900px;
+    text-align: center;
+}
+
+.nosotros h1, .contacto h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #e74c3c;
+}
+
+.nosotros h2, .contacto h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #e74c3c;
+  margin-top: 30px;
+}
+
+
+.nosotros p, .contacto p {
+  font-size: 26px;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 20px;
+}
+
+.nosotros ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.nosotros ul li {
+  margin-bottom: 28px;
+}
 
 
 
@@ -639,7 +674,7 @@ form button:hover {
   .foto {
     position: absolute;
     top: -113px;
-    left: -40%;
+    left: -25%;
     transform: translateX(-50%);
     z-index: 10;
     width: 300px;
@@ -655,7 +690,7 @@ form button:hover {
   .navegacion ul {
       gap: 30px;  /* Espacio más grande entre los elementos del menú */
       font-size: 22px;
-      
+      margin-left: -100px;
   }
 
 
@@ -671,22 +706,21 @@ form button:hover {
   }
 
   .navegacion .reg {
-    position: absolute;
+    position: relative;
     
-    right: -120%;
+    right: -85%;
     transform: translateX(-50%);
     z-index: 10;
     
     
   }
 
-  .navegacion .pos-sesion {
-    margin-right: 190px;
-    
-  }
-
+  
   .pos{
-    margin-right: 190px;
+    position: relative;
+    right: -10%;
+    transform: translateX(-50%);
+    z-index: 10;
     
   }
 
@@ -771,7 +805,7 @@ form button:hover {
   .foto {
     position: absolute;
     top: -113px;
-    left: -30%;
+    left: -22%;
     transform: translateX(-50%);
     z-index: 10;
     width: 300px;
@@ -806,23 +840,22 @@ form button:hover {
   }
 
   .navegacion .reg {
-    position: absolute;
+    position: relative;
     
-    right: -120%;
+    right: -56%;
     transform: translateX(-50%);
     z-index: 10;
     
     
   }
 
-  .navegacion .pos-sesion {
-    margin-right: 190px;
-    
-  }
+  
 
   .pos{
-    margin-right: 190px;
-    
+    position: relative;
+    right: -7%;
+    transform: translateX(-50%);
+    z-index: 10;
     
   }
 
@@ -921,11 +954,11 @@ form button:hover {
   
     .foto {
       position: absolute;
-      top: -113px;
-      left: -27%;
+      top: -87px;
+      left: -22%;
       transform: translateX(-50%);
       z-index: 10;
-      width: 300px;
+      width: 250px;
     }
   
     .title {
@@ -951,29 +984,28 @@ form button:hover {
     }
   
     .navegacion a {
-        font-size: 20px;  /* Aumentar tamaño de fuente para pantallas grandes */
+        font-size: 18px;  /* Aumentar tamaño de fuente para pantallas grandes */
         
         
     }
   
     .navegacion .reg {
-      position: absolute;
-      
-      right: -120%;
+      position: relative;
+      margin: 2px;
+      right: -70%;
       transform: translateX(-50%);
       z-index: 10;
       
       
     }
   
-    .navegacion .pos-sesion {
-      margin-right: 210px;
-      
-    }
+    
   
     .pos{
-      margin-right: 210px;
-      
+      position: relative;
+      right: -7%;
+      transform: translateX(-50%);
+      z-index: 10;
       
     }
   
@@ -1057,177 +1089,518 @@ form button:hover {
     }
 }
 
-@media (max-width: 1024px) {
-  /* Estilos específicos para pantallas de 1920px de ancho o más */
+@media (min-width: 1025px) and (max-width: 1280px) and (orientation: landscape){
+    /* Estilos específicos para pantallas de 1920px de ancho o más */
+    
+    /* Header */
+    .header {
+        height: 180vh;  /* Reduce la altura del header en pantallas grandes */
+    }
   
-  /* Header */
-  .header {
-      height: 110vh;  /* Reduce la altura del header en pantallas grandes */
-  }
-
-  .header .forma svg {
-    position: absolute;
-    bottom: -18px;
-    left: 0;
-    width: 100%;
-    z-index: 9;
-  }
-
-  /* Ajustar logo y título */
-  .header .overlay img {
-      max-width: 70%;
-  }
-
-  .foto {
-    position: absolute;
-    top: -78px;
-    left: -25%;
-    transform: translateX(-50%);
-    z-index: 10;
-    width: 230px;
-  }
-
-  .title {
-    margin-bottom: 70px;
-    width: 81ch;
-    font-size: 1em;
-    text-align: center;
-  }
-
-  /* Menú de navegación */
-  .navegacion ul {
-      gap: 8px;  /* Espacio más grande entre los elementos del menú */
-      font-size: 22px;
+    /* Ajustar logo y título */
+    .header .overlay img {
+        max-width: 70%;
+    }
+  
+    .foto {
+      position: absolute;
+      top: -87px;
+      left: -22%;
+      transform: translateX(-50%);
+      z-index: 10;
+      width: 250px;
+    }
+  
+    .title {
+      margin-bottom: 70px;
+      width: 113.5ch;
+      font-size: 1.3em;
+      text-align: center;
+    }
+  
+    /* Menú de navegación */
+    .navegacion ul {
+        gap: 13px;  /* Espacio más grande entre los elementos del menú */
+        font-size: 22px;
+        
+        
+    }
+  
+  
+  
+    .navegacion li {
+        font-size: 20px;  /* Aumentar tamaño de fuente para pantallas grandes */
+        margin-top: 30px;
+    }
+  
+    .navegacion a {
+        font-size: 18px;  /* Aumentar tamaño de fuente para pantallas grandes */
+        
+        
+    }
+  
+    .navegacion .reg {
+      position: relative;
+      margin: 2px;
+      right: -58%;
+      transform: translateX(-50%);
+      z-index: 10;
+      gap: 6px;
       
       
-  }
-
-
-
-  .navegacion li {
-      font-size: 20px;  /* Aumentar tamaño de fuente para pantallas grandes */
-      margin-top: 30px;
-  }
-
-  .navegacion a {
-      font-size: 15px;  /* Aumentar tamaño de fuente para pantallas grandes */
+    }
+  
+    .pos{
+      position: relative;
+      right: -6%;
+      transform: translateX(-50%);
+      z-index: 10;
+      gap: 6px;
       
-      
-  }
+    }
+  
+    /* Botones */
+    .boton {
+        width: 300px;
+        height: 80px;
+        font-size: 20px;
+    }
+  
+    /* Contenedor de coches */
+    .CocheContainer {
+        gap: 40px;  /* Espacio mayor entre los coches */
+    }
+  
+    .contenedor {
+      margin-top: 140px;
+      width: 100%;
+    }
+  
+    /* Contenedor de coches */
+    .CocheContainer2 {
+      gap: 15px;
+      max-width: 95%;
+    }
+  
+    .coche-detalles {
+      font-size: 10px;
+      margin-top: 10px;
+    }
+  
+  
+    .CocheItem {
+        width: 400px;  /* Aumentar el tamaño de los contenedores de los coches */
+        height: 350px;
+    }
+  
+    /* Footer */
+    .footer2 {
+        padding: 10px 0;  /* Aumentar el padding para pantallas grandes */
+    }
+  
+    /* Ajustar los contenedores dentro del footer */
+    .imgfooter {
+        width: 120px;
+    }
+  
+    /* Mejorar visibilidad de botones y elementos interactivos */
+    .boton:hover {
+        transform: scale(1.1);
+    }
+  
+    .CocheItem2 {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Otros ajustes */
+    .CocheItem {
+        margin-bottom: 30px;
+    }
+  
+    .etiqueta-reservado {
+      top: -138px;
+      font-size: 10px;
+    }
 
-  .navegacion .reg {
-    position: absolute;
-    
-    right: -120%;
-    transform: translateX(-50%);
-    z-index: 10;
-    
-    
-  }
-
-  .navegacion .pos-sesion {
-    margin-right: 160px;
-    
-  }
-
-  .pos{
-    margin-right: 160px;
-    
-    
-  }
-
-  /* Botones */
-  .boton {
-      width: 300px;
-      height: 80px;
-      font-size: 20px;
-  }
-
-  /* Contenedor de coches */
-  .CocheContainer {
-      gap: 40px;  /* Espacio mayor entre los coches */
-      
-  }
-
-  .contenedor {
-    margin-top: 140px;
-    width: 100%;
-  }
-
-  /* Contenedor de coches */
-  .CocheContainer2 {
-    gap: 15px;
-    max-width: 95%;
-  }
-
-  .coche-detalles {
-    font-size: 7px;
-    margin-top: 10px;
-  }
-
-
-  .CocheItem {
-      width: 300px;  /* Aumentar el tamaño de los contenedores de los coches */
-      height: 350px;
-  }
-
-  /* Footer */
-  .footer2 {
-      padding: 10px 0;  /* Aumentar el padding para pantallas grandes */
-  }
-
-  /* Ajustar los contenedores dentro del footer */
-  .imgfooter {
-      width: 120px;
-  }
-
-  /* Mejorar visibilidad de botones y elementos interactivos */
-  .boton:hover {
-      transform: scale(1.1);
-  }
-
-  .CocheItem2 {
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Otros ajustes */
-  .CocheItem {
-      margin-bottom: 30px;
-  }
-
-  .etiqueta-reservado {
-    top: -175px;
-    font-size: 9px;
-  }
-
-  .filtro {
-      font-size: 12px;  /* Ajustar tamaño de fuente */
-      width: 57px;  /* Ajustar tamaño de los filtros */
-      margin-top: 14px;
-      
-  }
-
-  .noUi-target {
-    width: 130px !important; /* Ajuste de tamaño */ 
-  }
-
-  form select {
-    width: 75px;
-    padding: 8px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #333;
-    background-color: #fff;
-    box-sizing: border-box;
-  }
-
-
+  
+    .filtro {
+        font-size: 14px;  /* Ajustar tamaño de fuente */
+        width: 65px;  /* Ajustar tamaño de los filtros */
+        margin-right: 2px;
+    }
+  
+    form select {
+      width: 100px;
+      padding: 8px;
+      font-size: 19px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: #333;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
 }
 
+
+@media (max-width: 1024px) {
+ 
+  
+      /* Header */
+      .header {
+        height: 180vh;  /* Reduce la altura del header en pantallas grandes */
+    }
+
+    .header .forma svg {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      
+      
+    }
+  
+    /* Ajustar logo y título */
+    .header .overlay img {
+        max-width: 50%;
+    }
+  
+    .foto {
+      position: absolute;
+      top: -57px;
+      left: -24%;
+      transform: translateX(-50%);
+      z-index: 10;
+      width: 200px;
+    }
+  
+    .title {
+      margin-bottom: 70px;
+      width: 123.5ch;
+      font-size: 1.1em;
+      text-align: center;
+    }
+  
+    /* Menú de navegación */
+    .navegacion ul {
+        gap: 13px;  /* Espacio más grande entre los elementos del menú */
+        font-size: 22px;
+        
+        
+    }
+  
+  
+  
+    .navegacion li {
+        font-size: 15px;  /* Aumentar tamaño de fuente para pantallas grandes */
+        margin-top: 40px;
+    }
+  
+    .navegacion a {
+        font-size: 14px;  /* Aumentar tamaño de fuente para pantallas grandes */
+        
+        
+    }
+  
+    .navegacion .reg {
+      position: relative;
+      margin-top: 2px;
+      right: -55%;
+      transform: translateX(-50%);
+      z-index: 10;
+      gap: 10px;
+      
+    }
+  
+    .pos{
+      position: relative;
+      right: -5%;
+      transform: translateX(-50%);
+      z-index: 10;
+      
+      
+    }
+
+    .header2 {
+      min-height: 120px;
+    }
+  
+    /* Botones */
+    .boton {
+        width: 300px;
+        height: 80px;
+        font-size: 20px;
+    }
+  
+    /* Contenedor de coches */
+    .CocheContainer {
+        gap: 40px;  /* Espacio mayor entre los coches */
+    }
+  
+    .contenedor {
+      margin-top: 140px;
+      width: 100%;
+      min-height: 120vh;
+    }
+  
+    /* Contenedor de coches */
+    .CocheContainer2 {
+      gap: 15px;
+      max-width: 95%;
+    }
+  
+    .coche-detalles {
+      font-size: 10px;
+      margin-top: 10px;
+    }
+  
+  
+    .CocheItem {
+        width: 280px;  /* Aumentar el tamaño de los contenedores de los coches */
+        height: 230px;
+    }
+  
+    /* Footer */
+    .footer2 {
+        padding: 10px 0;  /* Aumentar el padding para pantallas grandes */
+    }
+  
+    /* Ajustar los contenedores dentro del footer */
+    .imgfooter {
+        width: 120px;
+    }
+  
+    /* Mejorar visibilidad de botones y elementos interactivos */
+    .boton:hover {
+        transform: scale(1.1);
+    }
+  
+    .CocheItem2 {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Otros ajustes */
+    .CocheItem {
+        margin-bottom: 30px;
+    }
+  
+    .etiqueta-reservado {
+      top: -174px;
+      font-size: 8px;
+    }
+  
+    
+  
+    .noUi-horizontal .noUi-tooltip {
+      font-size: 8px;
+    }
+  
+    .filtro {
+        font-size: 16px;  /* Ajustar tamaño de fuente */
+        width: 74px;  /* Ajustar tamaño de los filtros */
+        
+    }
+  
+    form select {
+      width: 100px;
+      padding: 8px;
+      font-size: 19px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: #333;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+  }
+
+  
+@media (max-width: 915px) {
+ 
+    /* Estilos específicos para pantallas de 1920px de ancho o más */
+    body {
+      width: 915px;
+    }
+      /* Header */
+      .header {
+        height: 180vh;  /* Reduce la altura del header en pantallas grandes */
+    }
+
+    .header .forma svg {
+      position: absolute;
+      bottom: -15px;
+      left: 0;
+      width: 100%;
+      
+      
+    }
+  
+    /* Ajustar logo y título */
+    .header .overlay img {
+        max-width: 50%;
+    }
+  
+    .foto {
+      position: absolute;
+      top: -57px;
+      left: -24%;
+      transform: translateX(-50%);
+      z-index: 10;
+      width: 200px;
+    }
+  
+    .title {
+      margin-bottom: 70px;
+      width: 123.5ch;
+      font-size: 1.1em;
+      text-align: center;
+    }
+  
+    /* Menú de navegación */
+    .navegacion ul {
+        gap: 13px;  /* Espacio más grande entre los elementos del menú */
+        font-size: 22px;
+        
+        
+    }
+  
+  
+  
+    .navegacion li {
+        font-size: 15px;  /* Aumentar tamaño de fuente para pantallas grandes */
+        margin-top: 40px;
+    }
+  
+    .navegacion a {
+        font-size: 14px;  /* Aumentar tamaño de fuente para pantallas grandes */
+        
+        
+    }
+  
+    .navegacion .reg {
+      position: relative;
+      margin-top: 2px;
+      right: -55%;
+      transform: translateX(-50%);
+      z-index: 10;
+      gap: 10px;
+      
+    }
+  
+    .pos{
+      position: relative;
+      right: -5%;
+      transform: translateX(-50%);
+      z-index: 10;
+      
+      
+    }
+
+    .header2 {
+      min-height: 120px;
+    }
+  
+    /* Botones */
+    .boton {
+        width: 300px;
+        height: 80px;
+        font-size: 20px;
+    }
+  
+    /* Contenedor de coches */
+    .CocheContainer {
+        gap: 40px;  /* Espacio mayor entre los coches */
+    }
+  
+    .contenedor {
+      margin-top: 140px;
+      width: 100%;
+      min-height: 120vh;
+    }
+  
+    /* Contenedor de coches */
+    .CocheContainer2 {
+      gap: 15px;
+      max-width: 95%;
+    }
+  
+    .coche-detalles {
+      font-size: 10px;
+      margin-top: 10px;
+    }
+  
+  
+    .CocheItem {
+        width: 280px;  /* Aumentar el tamaño de los contenedores de los coches */
+        height: 230px;
+    }
+  
+    /* Footer */
+    .footer2 {
+        padding: 10px 0;  /* Aumentar el padding para pantallas grandes */
+    }
+  
+    /* Ajustar los contenedores dentro del footer */
+    .imgfooter {
+        width: 120px;
+    }
+  
+    /* Mejorar visibilidad de botones y elementos interactivos */
+    .boton:hover {
+        transform: scale(1.1);
+    }
+  
+    .CocheItem2 {
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Otros ajustes */
+    .CocheItem {
+        margin-bottom: 30px;
+    }
+  
+    .etiqueta-reservado {
+      top: -184px;
+      font-size: 8px;
+    }
+  
+    
+  
+    .noUi-horizontal .noUi-tooltip {
+      font-size: 8px;
+    }
+  
+    .filtro {
+        font-size: 16px;  /* Ajustar tamaño de fuente */
+        width: 61px;  /* Ajustar tamaño de los filtros */
+        
+    }
+  
+    form select {
+      width: 100px;
+      padding: 8px;
+      font-size: 19px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: #333;
+      background-color: #fff;
+      box-sizing: border-box;
+    }
+  }
+
+
+
+
+
+
+  
 @media (max-width: 768px) {
   /* Estilos específicos para pantallas de 1920px de ancho o más */
-  
+  body {
+    width: 768px;
+  }
+    /* Header */
+    .header {
+      height: 180vh;  /* Reduce la altura del header en pantallas grandes */
+  }
   /* Header */
   
 
@@ -1236,6 +1609,7 @@ form button:hover {
     bottom: -15px;
     left: 0;
     width: 100%;
+    
     
   }
 
@@ -1255,9 +1629,10 @@ form button:hover {
 
   .title {
     margin-bottom: 70px;
-    width: 81ch;
-    font-size: 1em;
+    width: 41ch;
+    font-size: 2em;
     text-align: center;
+    white-space: pre-wrap; /* Esto asegura que los saltos de línea se respeten */
   }
 
   /* Menú de navegación */
@@ -1279,7 +1654,7 @@ form button:hover {
   list-style: none;
   font-size: 16px;
   position: relative;
-  height: 10vh;
+  height: 14vh;
   
 }
 
@@ -1299,7 +1674,7 @@ form button:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.1s ease, transform 0.1s ease;
   height: auto;
 }
 
@@ -1309,7 +1684,7 @@ form button:hover {
 
 .navegacion-movil .menu-desplegable {
   position: relative;  /* Asegura que el sub-menú se posicione correctamente */
-  margin-top: 45px;
+  margin-top: 15px;
 }
 
 .navegacion-movil .menu-desplegable:hover .sub-menu {
@@ -1364,24 +1739,27 @@ form button:hover {
   background-color: #444;
 }
 }
-
+@media (max-width: 768px) {
   /* Botones */
   .boton {
-      width: 120px;
-      height: 60px;
-      font-size: 10px;
+  
+      width: 100%; /* Hacer los botones más grandes */
+      height: 70px; /* Ajuste de la altura */
+      font-size: 18px; /* Aumento del tamaño del texto */
   }
 
   /* Contenedor de coches */
   .CocheContainer {
-      gap: 0px;  /* Espacio mayor entre los coches */
-      
+      gap: 350px;  /* Espacio mayor entre los coches */
+      grid-template-columns: 1fr; /* Cambiamos a 1 columna */
+      display: grid; /* Usamos un sistema de rejilla */
   }
 
   .contenedor {
     margin-top: 140px;
     width: 100%;
-    min-height: 40vh;
+    min-height: 180vh;
+    
   }
 
   .contenedor2 {
@@ -1393,7 +1771,8 @@ form button:hover {
   .CocheContainer2 {
     display: grid; /* Usamos un sistema de rejilla */
     grid-template-columns: 1fr; /* Cambiamos a 1 columna */
-    gap: 35px; /* Mantener espacio entre los coches */
+    gap: 60px; /* Mantener espacio entre los coches */
+    
   }
 
   .coche-detalles {
@@ -1401,10 +1780,13 @@ form button:hover {
     margin-top: 10px;
   }
 
+  
+
 
   .CocheItem {
-      width: 230px;  /* Aumentar el tamaño de los contenedores de los coches */
-      height: 200px;
+    width: 600px; /* Asegúrate de que cada coche ocupe toda el ancho del contenedor */
+    max-width: 600px; /* Ajuste de la imagen a la pantalla */
+   
   }
 
   /* Footer */
@@ -1496,7 +1878,7 @@ form button:hover {
 @media (max-width: 768px) {
   .navegacion-movil img.foto2 {
       width: 180px;  /* Ajusta el tamaño del logo en pantallas pequeñas */
-      margin-top: 35px;
+      margin-top: 10px;
   }
 }
 
@@ -1516,7 +1898,7 @@ form button:hover {
 
   
 }
-
+}
 @media (min-width: 769px) {
     .menu-desplegable {
         display: none;  /* Ocultar el menú desplegable en pantallas grandes */
@@ -1528,3 +1910,956 @@ form button:hover {
 }
 
 
+
+
+@media (max-width: 425px) {
+  /* Estilos específicos para pantallas de 1920px de ancho o más */
+  
+ 
+  body {
+    width: 425px;
+  }
+  
+
+  .header .forma svg {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    
+    
+  }
+
+  /* Ajustar logo y título */
+  .header .overlay img {
+      max-width: 70%;
+  }
+
+  .foto {
+    position: absolute;
+    top: -48px;
+    left: -23%;
+    transform: translateX(-50%);
+    
+    width: 180px;
+  }
+
+  .title {
+    margin-bottom: 70px;
+    width: 30ch;
+    font-size: 1.7em;
+    text-align: center;
+    white-space: pre-wrap; /* Esto asegura que los saltos de línea se respeten */
+  }
+
+  
+    /* Ocultar el menú de navegación principal */
+    .navegacion {
+        display: none;
+    }
+  }
+    @media (max-width: 425px) {
+    /* Menú móvil */
+/* Menú de navegación */
+.navegacion-movil ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+  list-style: none;
+  font-size: 16px;
+  position: relative;
+  height: 14vh;
+  
+}
+
+
+
+
+.navegacion-movil .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: auto;
+  background-color: rgba(51, 51, 51, 0.95);
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  height: auto;
+}
+
+.navegacion-movil .sub-menu li {
+  text-align: center;
+}
+
+.navegacion-movil .menu-desplegable {
+  position: relative;  /* Asegura que el sub-menú se posicione correctamente */
+  margin-top: 15px;
+  
+}
+
+.navegacion-movil .menu-desplegable:hover .sub-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navegacion-movil .menu-activo .sub-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efectos hover en los enlaces del sub-menú */
+.navegacion-movil .sub-menu a {
+  color: white;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navegacion-movil .sub-menu a:hover {
+  background-color: #444;
+  color: #ff9e00; /* Cambia el color al pasar el mouse */
+}
+
+
+
+
+.navegacion-movil .sub-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+
+.simbolo-usuario:hover,
+.simbolo-menu:hover {
+  color: #ff0000; /* Cambia el color cuando se pasa el ratón */
+}
+
+
+
+/* Ajustes para mejorar la visibilidad del sub-menú */
+.navegacion-movil .sub-menu li {
+  transition: background-color 0.3s ease;
+}
+
+.navegacion-movil .menu-desplegable:hover .sub-menu li:hover {
+  background-color: #444;
+}
+}
+@media (max-width: 425px) {
+  /* Botones */
+  .boton {
+  
+    width: 100%; /* Hacer los botones más grandes */
+    height: 70px; /* Ajuste de la altura */
+    font-size: 18px; /* Aumento del tamaño del texto */
+}
+
+/* Contenedor de coches */
+.CocheContainer {
+    gap: 150px;  /* Espacio mayor entre los coches */
+    grid-template-columns: 1fr; /* Cambiamos a 1 columna */
+    display: grid; /* Usamos un sistema de rejilla */
+}
+
+.contenedor {
+  margin-top: 140px;
+  width: 100%;
+  min-height: 220vh;
+  
+}
+
+.contenedor2 {
+  position: relative;
+  
+}
+
+/* Contenedor de coches */
+.CocheContainer2 {
+  display: grid; /* Usamos un sistema de rejilla */
+  grid-template-columns: 1fr; /* Cambiamos a 1 columna */
+  gap: 60px; /* Mantener espacio entre los coches */
+  
+}
+
+.coche-detalles {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+
+
+
+.CocheItem {
+  width: 350px; /* Asegúrate de que cada coche ocupe toda el ancho del contenedor */
+  max-width: 350px; /* Ajuste de la imagen a la pantalla */
+ 
+}
+
+  /* Footer */
+  .footer2 {
+      padding: 10px 0;  /* Aumentar el padding para pantallas grandes */
+      width: 425px;
+  }
+
+  /* Ajustar los contenedores dentro del footer */
+  .imgfooter {
+      width: 120px;
+  }
+
+  /* Mejorar visibilidad de botones y elementos interactivos */
+  .boton:hover {
+      transform: scale(1.1);
+  }
+
+  .CocheItem2 {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+  }
+
+  .CochePortada2 {
+    max-width: 100%; /* Asegura que la imagen del coche ocupe todo el espacio disponible */
+  }
+
+  /* Otros ajustes */
+  .CocheItem {
+      margin-bottom: 30px;
+  }
+
+  .etiqueta-reservado {
+    top: 115px;
+    font-size: 15px;
+  }
+
+  .filtro {
+      font-size: 15px;  /* Ajustar tamaño de fuente */
+      width: 75px;  /* Ajustar tamaño de los filtros */
+      margin-right: 4px;
+      
+  }
+
+  .noUi-target {
+    width: 90px !important; /* Ajuste de tamaño */ 
+
+    
+  }
+
+  form select {
+    width: 55px;
+    padding: 8px;
+    font-size: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    
+  }
+
+  .noUi-horizontal .noUi-tooltip {
+    font-size: 8px;
+    
+  }
+
+  form {
+      
+      margin-top: 20px;
+      margin-left: -14px;
+      
+
+  }
+  
+ /* Logo más grande sin cambiar el tamaño del header */
+.navegacion-movil img.foto2 {
+  width: 200px;  /* Aumenta el ancho del logo según lo necesites */
+  height: auto;  /* Mantiene la proporción del logo */
+  transform: scale(1.2);  /* Escala el logo un 20% más grande */
+  transition: transform 0.3s ease;  /* Transición suave al cambiar la posición */
+  margin-left: 25px;
+}
+
+.fondo_filtro {
+  background: linear-gradient(90deg, #752020,#fc1c03, #752020);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+  width: 100%;
+  height: 190px;
+  
+  position: relative; /* Asegura que el z-index funcione */
+}
+
+/* Si deseas que el logo se ajuste bien en pantallas pequeñas */
+@media (max-width: 425px) {
+  .navegacion-movil img.foto2 {
+      width: 180px;  /* Ajusta el tamaño del logo en pantallas pequeñas */
+      margin-top: 10px;
+  }
+
+
+.simbolo-usuario {
+  font-size: 30px;  /* Reducir el tamaño */
+  margin-right: 10px;  /* Reducir el margen */
+  margin-left: 30px;  /* Reducir el margen */
+  color: #ffffff;
+}
+
+/* Ajustes del simbolo de menú */
+.simbolo-menu {
+  font-size: 30px;  /* Reducir el tamaño */
+  margin-left: 90px;  /* Reducir el margen para no salirse */
+  color: #ffffff;
+}
+
+  
+}
+
+}
+
+@media (max-width: 390px) {
+  /* Estilos específicos para pantallas de 1920px de ancho o más */
+  
+ 
+  body {
+    width: 390px;
+  }
+  
+
+  .header .forma svg {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    
+    
+  }
+
+  /* Ajustar logo y título */
+  .header .overlay img {
+      max-width: 70%;
+  }
+
+  .foto {
+    position: absolute;
+    top: -48px;
+    left: -23%;
+    transform: translateX(-50%);
+    
+    width: 180px;
+  }
+
+  .title {
+    margin-bottom: 70px;
+    width: 30ch;
+    font-size: 1.6em;
+    text-align: center;
+    white-space: pre-wrap; /* Esto asegura que los saltos de línea se respeten */
+  }
+
+  
+    /* Ocultar el menú de navegación principal */
+    .navegacion {
+        display: none;
+    }
+  }
+    @media (max-width: 390px) {
+
+     
+    /* Menú móvil */
+/* Menú de navegación */
+.navegacion-movil ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+  list-style: none;
+  font-size: 16px;
+  position: relative;
+  height: 14vh;
+  
+}
+
+
+
+
+.navegacion-movil .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: auto;
+  background-color: rgba(51, 51, 51, 0.95);
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  height: auto;
+}
+
+.navegacion-movil .sub-menu li {
+  text-align: center;
+}
+
+.navegacion-movil .menu-desplegable {
+  position: relative;  /* Asegura que el sub-menú se posicione correctamente */
+  margin-top: 15px;
+  
+}
+
+.navegacion-movil .menu-desplegable:hover .sub-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navegacion-movil .menu-activo .sub-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efectos hover en los enlaces del sub-menú */
+.navegacion-movil .sub-menu a {
+  color: white;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navegacion-movil .sub-menu a:hover {
+  background-color: #444;
+  color: #ff9e00; /* Cambia el color al pasar el mouse */
+}
+
+
+
+
+.navegacion-movil .sub-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+
+.simbolo-usuario:hover,
+.simbolo-menu:hover {
+  color: #ff0000; /* Cambia el color cuando se pasa el ratón */
+}
+
+
+
+/* Ajustes para mejorar la visibilidad del sub-menú */
+.navegacion-movil .sub-menu li {
+  transition: background-color 0.3s ease;
+}
+
+.navegacion-movil .menu-desplegable:hover .sub-menu li:hover {
+  background-color: #444;
+}
+}
+@media (max-width: 390px) {
+  /* Botones */
+  .boton {
+  
+    width: 100%; /* Hacer los botones más grandes */
+    height: 70px; /* Ajuste de la altura */
+    font-size: 18px; /* Aumento del tamaño del texto */
+}
+
+/* Contenedor de coches */
+.CocheContainer {
+    gap: 350px;  /* Espacio mayor entre los coches */
+    grid-template-columns: 1fr; /* Cambiamos a 1 columna */
+    display: grid; /* Usamos un sistema de rejilla */
+}
+
+.contenedor {
+  margin-top: 140px;
+  width: 100%;
+  min-height: 250vh;
+  
+}
+
+.contenedor2 {
+  position: relative;
+  
+}
+
+/* Contenedor de coches */
+.CocheContainer2 {
+  display: grid; /* Usamos un sistema de rejilla */
+  grid-template-columns: 1fr; /* Cambiamos a 1 columna */
+  gap: 60px; /* Mantener espacio entre los coches */
+  
+}
+
+.coche-detalles {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+
+
+
+.CocheItem {
+  width: 350px; /* Asegúrate de que cada coche ocupe toda el ancho del contenedor */
+  max-width: 350px; /* Ajuste de la imagen a la pantalla */
+ 
+}
+
+  /* Footer */
+  .footer2 {
+      padding: 10px 0;  /* Aumentar el padding para pantallas grandes */
+      width: 390px;
+  }
+
+  /* Ajustar los contenedores dentro del footer */
+  .imgfooter {
+      width: 120px;
+  }
+
+  /* Mejorar visibilidad de botones y elementos interactivos */
+  .boton:hover {
+      transform: scale(1.1);
+  }
+
+  .CocheItem2 {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+  }
+
+  .CochePortada2 {
+    max-width: 100%; /* Asegura que la imagen del coche ocupe todo el espacio disponible */
+  }
+
+  /* Otros ajustes */
+  .CocheItem {
+      margin-bottom: 30px;
+  }
+
+  .etiqueta-reservado {
+    top: 115px;
+    font-size: 15px;
+  }
+
+  .filtro {
+      font-size: 15px;  /* Ajustar tamaño de fuente */
+      width: 67px;  /* Ajustar tamaño de los filtros */
+      margin-right: -0px;
+     
+      
+  }
+
+  .noUi-target {
+    width: 90px !important; /* Ajuste de tamaño */ 
+
+    
+  }
+
+  form select {
+    width: 55px;
+    padding: 8px;
+    font-size: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    
+  }
+
+  .noUi-horizontal .noUi-tooltip {
+    font-size: 8px;
+    
+  }
+
+  form {
+      
+      margin-top: 20px;
+      margin-left: -9px;
+      
+
+  }
+  
+ /* Logo más grande sin cambiar el tamaño del header */
+.navegacion-movil img.foto2 {
+  width: 200px;  /* Aumenta el ancho del logo según lo necesites */
+  height: auto;  /* Mantiene la proporción del logo */
+  transform: scale(1.2);  /* Escala el logo un 20% más grande */
+  transition: transform 0.3s ease;  /* Transición suave al cambiar la posición */
+  margin-left: 25px;
+}
+
+.fondo_filtro {
+  background: linear-gradient(90deg, #752020,#fc1c03, #752020);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+  width: 100%;
+  height: 190px;
+  
+  position: relative; /* Asegura que el z-index funcione */
+}
+
+/* Si deseas que el logo se ajuste bien en pantallas pequeñas */
+@media (max-width: 390px) {
+  .navegacion-movil img.foto2 {
+      width: 180px;  /* Ajusta el tamaño del logo en pantallas pequeñas */
+      margin-top: 10px;
+  }
+
+
+.simbolo-usuario {
+  font-size: 30px;  /* Reducir el tamaño */
+  margin-right: 10px;  /* Reducir el margen */
+  margin-left: -50px;  /* Reducir el margen */
+  color: #ffffff;
+}
+
+/* Ajustes del simbolo de menú */
+.simbolo-menu {
+  font-size: 30px;  /* Reducir el tamaño */
+  margin-left: 0px;  /* Reducir el margen para no salirse */
+  color: #ffffff;
+}
+
+  
+}
+
+}
+
+
+
+@media (max-width: 320px) {
+  /* Estilos específicos para pantallas de 1920px de ancho o más */
+  
+ 
+  body {
+    width: 320px;
+  }
+  
+
+  .header .forma svg {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    
+    
+  }
+
+  /* Ajustar logo y título */
+  .header .overlay img {
+      max-width: 70%;
+  }
+
+  .foto {
+    position: absolute;
+    top: -48px;
+    left: -23%;
+    transform: translateX(-50%);
+    
+    width: 180px;
+  }
+
+  .title {
+    margin-bottom: 70px;
+    width: 30ch;
+    font-size: 1.2em;
+    text-align: center;
+    white-space: pre-wrap; /* Esto asegura que los saltos de línea se respeten */
+  }
+
+  
+    /* Ocultar el menú de navegación principal */
+    .navegacion {
+        display: none;
+    }
+  }
+    @media (max-width: 320px) {
+    /* Menú móvil */
+/* Menú de navegación */
+.navegacion-movil ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+  list-style: none;
+  font-size: 16px;
+  position: relative;
+  height: 14vh;
+  
+}
+
+
+
+
+.navegacion-movil .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: auto;
+  background-color: rgba(51, 51, 51, 0.95);
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  height: auto;
+}
+
+.navegacion-movil .sub-menu li {
+  text-align: center;
+}
+
+.navegacion-movil .menu-desplegable {
+  position: relative;  /* Asegura que el sub-menú se posicione correctamente */
+  margin-top: 15px;
+  
+}
+
+.navegacion-movil .menu-desplegable:hover .sub-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navegacion-movil .menu-activo .sub-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efectos hover en los enlaces del sub-menú */
+.navegacion-movil .sub-menu a {
+  color: white;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navegacion-movil .sub-menu a:hover {
+  background-color: #444;
+  color: #ff9e00; /* Cambia el color al pasar el mouse */
+}
+
+
+
+
+.navegacion-movil .sub-menu.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+
+
+.simbolo-usuario:hover,
+.simbolo-menu:hover {
+  color: #ff0000; /* Cambia el color cuando se pasa el ratón */
+}
+
+
+
+/* Ajustes para mejorar la visibilidad del sub-menú */
+.navegacion-movil .sub-menu li {
+  transition: background-color 0.3s ease;
+}
+
+.navegacion-movil .menu-desplegable:hover .sub-menu li:hover {
+  background-color: #444;
+}
+}
+@media (max-width: 320px) {
+  /* Botones */
+  .boton {
+  
+    width: 90%; /* Hacer los botones más grandes */
+    height: 70px; /* Ajuste de la altura */
+    font-size: 18px; /* Aumento del tamaño del texto */
+}
+
+/* Contenedor de coches */
+.CocheContainer {
+    gap: 150px;  /* Espacio mayor entre los coches */
+    grid-template-columns: 1fr; /* Cambiamos a 1 columna */
+    display: grid; /* Usamos un sistema de rejilla */
+   
+}
+
+.contenedor {
+  margin-top: 140px;
+  width: 100%;
+  min-height: 270vh;
+  
+}
+
+.contenedor2 {
+  position: relative;
+  
+}
+
+/* Contenedor de coches */
+.CocheContainer2 {
+  display: grid; /* Usamos un sistema de rejilla */
+  grid-template-columns: 1fr; /* Cambiamos a 1 columna */
+  gap: 60px; /* Mantener espacio entre los coches */
+  
+}
+
+.coche-detalles {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+
+
+
+.CocheItem {
+  width: 320px; /* Asegúrate de que cada coche ocupe toda el ancho del contenedor */
+  max-width: 550px; /* Ajuste de la imagen a la pantalla */
+ 
+}
+
+  /* Footer */
+  .footer2 {
+      padding: 10px 0;  /* Aumentar el padding para pantallas grandes */
+      width: 320px;
+  }
+
+  /* Ajustar los contenedores dentro del footer */
+  .imgfooter {
+      width: 120px;
+  }
+
+  /* Mejorar visibilidad de botones y elementos interactivos */
+  .boton:hover {
+      transform: scale(1.1);
+  }
+
+  .CocheItem2 {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+  }
+
+  .CochePortada2 {
+    max-width: 100%; /* Asegura que la imagen del coche ocupe todo el espacio disponible */
+  }
+
+  /* Otros ajustes */
+  .CocheItem {
+      margin-bottom: 30px;
+  }
+
+  .etiqueta-reservado {
+    top: 115px;
+    font-size: 15px;
+  }
+
+  .filtro {
+      font-size: 12px;  /* Ajustar tamaño de fuente */
+      max-width: 65px;  /* Ajustar tamaño de los filtros */
+      margin-right: -15px;
+      
+  }
+
+  .noUi-target {
+    width: 40px !important; /* Ajuste de tamaño */ 
+
+    
+  }
+
+  .noUi-horizontal .noUi-handle {
+    width: 17px !important;
+    height: 28px;
+    right: -17px  !important;
+    top: -6px;
+}
+
+.noUi-handle:after {
+  left: 1px !important;
+}
+
+ 
+
+  form select {
+    width: 55px;
+    padding: 8px;
+    font-size: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+    
+  }
+
+  .noUi-horizontal .noUi-tooltip {
+    font-size: 8px;
+    margin-left: -2px;
+  }
+
+  form {
+      
+      margin-top: 20px;
+      margin-left: -10px;
+      
+
+  }
+  
+ /* Logo más grande sin cambiar el tamaño del header */
+.navegacion-movil img.foto2 {
+  width: 200px;  /* Aumenta el ancho del logo según lo necesites */
+  height: auto;  /* Mantiene la proporción del logo */
+  transform: scale(1.2);  /* Escala el logo un 20% más grande */
+  transition: transform 0.3s ease;  /* Transición suave al cambiar la posición */
+  margin-left: 25px;
+}
+
+.fondo_filtro {
+  background: linear-gradient(90deg, #752020,#fc1c03, #752020);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+  width: 100%;
+  height: 190px;
+  
+  position: relative; /* Asegura que el z-index funcione */
+}
+
+/* Si deseas que el logo se ajuste bien en pantallas pequeñas */
+@media (max-width: 320px) {
+  .navegacion-movil img.foto2 {
+      width: 180px;  /* Ajusta el tamaño del logo en pantallas pequeñas */
+      margin-top: 10px;
+  }
+
+
+.simbolo-usuario {
+  font-size: 30px;  /* Reducir el tamaño */
+  margin-right: 10px;  /* Reducir el margen */
+  margin-left: -30px;  /* Reducir el margen */
+  color: #ffffff;
+}
+
+/* Ajustes del simbolo de menú */
+.simbolo-menu {
+  font-size: 30px;  /* Reducir el tamaño */
+  margin-left: -30px;  /* Reducir el margen para no salirse */
+  color: #ffffff;
+}
+
+  
+}
+
+}
