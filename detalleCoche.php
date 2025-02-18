@@ -1,6 +1,5 @@
 <?php
-session_start();  // Esto es lo primero que debes hacer para acceder a la sesión
-// Incluir el archivo de conexión a la base de datos
+session_start();  
 include 'conexion.php';
 
 // Obtener el id del coche desde la URL
@@ -15,7 +14,7 @@ if ($result->num_rows > 0) {
     $coche = $result->fetch_assoc();
     $coche['matriculacion'] = date('d-m-Y', strtotime($coche['matriculacion']));
 } else {
-    $coche = null; // Si no se encuentra el coche
+    $coche = null; 
 }
 
 // Cerrar la conexión
@@ -41,15 +40,14 @@ $conn->close();
     <li><a href="flocars.php"><img class="foto" src="Diseño_Logos/Diseño Logo Flocars Fondo.png" alt="Logo Flocars"></a></li>
     <li><a href="CompraCoche.php">Comprar Coche</a></li>
     <li><a href="ReservaCoche.php">Vehículos Reservados</a></li>
-    <li><a href="#">Nosotros</a></li>
-    <li><a href="#">Contacto</a></li>
+    <li><a href="Nosotros.php">Nosotros</a></li>
+    <li><a href="Contacto.php">Contacto</a></li>
 
     
 
     <!-- Menú de registro / inicio sesión -->
     <li class="menu-login">
       <?php if (isset($_SESSION['nombre_usuario'])): ?>
-        <!-- Si el usuario está logueado -->
         <li class="pos">¡Hola, <?php echo $_SESSION['nombre_usuario']; ?>!</li>
         <li class="pos"><a href="cerrar_sesion.php">Cerrar sesión</a></li>
       <?php else: ?>
@@ -69,18 +67,18 @@ $conn->close();
             <li><a href="flocars.php"><img class="foto2" src="Diseño_Logos/Diseño Logo Flocars Fondo.png" alt="Logo Flocars"></a></li>
             <li class="menu-desplegable">
                 <a class="simbolo-menu"href="#">
-                <i class="fa fa-bars"></i> <!-- Ícono de usuario -->
+                <i class="fa fa-bars"></i> 
                 </a>
                 <ul class="sub-menu">
                     <li><a href="CompraCoche.php">Comprar Coche</a></li>
                     <li><a href="ReservaCoche.php">Vehículos Reservados</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="Nosotros.php">Nosotros</a></li>
+                    <li><a href="Contacto.php">Contacto</a></li>
                 </ul>
             </li>
             <li class="menu-desplegable">
                 <a class="simbolo-usuario" href="#">
-                    <i class="fa fa-user"></i> <!-- Ícono de usuario -->
+                    <i class="fa fa-user"></i> 
                 </a>
                 <ul class="sub-menu">
                     <li><a href="Registro.php">Registrarme</a></li>
@@ -101,7 +99,6 @@ $conn->close();
 
         <!-- Contenedor para la imagen y características -->
         <div class="detalles-contenido">
-            <!-- Columna para la imagen -->
             <div class="detalles-imagen">
                 <div class="carrusel">
                     <div class="carrusel-imagenes">
@@ -128,10 +125,10 @@ $conn->close();
             <!-- Columna para las características -->
             <div class="detalles-caracteristicas">
                 <div class="caracteristicas"> 
-                    <p><?php echo $coche['marca']; ?></p> <!-- Nombre en negrita -->
-                    <p><strong><?php echo $coche['modelo']; ?></strong></p> <!-- Modelo debajo -->
+                    <p><?php echo $coche['marca']; ?></p> 
+                    <p><strong><?php echo $coche['modelo']; ?></strong></p> 
                     <p class="titulo-precio">Precio</p>
-                    <p class="precio"><span class="precio"><?php echo $coche['precio']; ?> €</span></p> <!-- Precio debajo --> 
+                    <p class="precio"><span class="precio"><?php echo $coche['precio']; ?> €</span></p> 
                 </div>
 
                 <div class="etiqueta-ambiental">

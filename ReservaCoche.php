@@ -45,8 +45,8 @@ $conn->close();
     <li><a href="flocars.php"><img class="foto" src="Diseño_Logos/Diseño Logo Flocars Fondo.png" alt="Logo Flocars"></a></li>
     <li><a href="CompraCoche.php">Comprar Coche</a></li>
     <li><a href="ReservaCoche.php">Vehículos Reservados</a></li>
-    <li><a href="#">Nosotros</a></li>
-    <li><a href="#">Contacto</a></li>
+    <li><a href="Nosotros.php">Nosotros</a></li>
+    <li><a href="Contacto.php">Contacto</a></li>
 
     
 
@@ -78,8 +78,8 @@ $conn->close();
                 <ul class="sub-menu">
                     <li><a href="CompraCoche.php">Comprar Coche</a></li>
                     <li><a href="ReservaCoche.php">Vehículos Reservados</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="Nosotros.php">Nosotros</a></li>
+                    <li><a href="Contacto.php">Contacto</a></li>
                 </ul>
             </li>
             <li class="menu-desplegable">

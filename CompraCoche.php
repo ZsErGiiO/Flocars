@@ -24,6 +24,9 @@ if ($result_marca->num_rows > 0) {
 
 // Obtener los modelos disponibles de la base de datos
 $sql_modelo = "SELECT DISTINCT modelo FROM coches";
+if ($marca) {
+    $sql_modelo .= " WHERE marca = '$marca'";  // Filtramos por la marca si se ha seleccionado
+}
 $result_modelo = $conn->query($sql_modelo);
 $modelos = [];
 if ($result_modelo->num_rows > 0) {
@@ -97,8 +100,8 @@ $conn->close();
     <li><a href="flocars.php"><img class="foto" src="Diseño_Logos/Diseño Logo Flocars Fondo.png" alt="Logo Flocars"></a></li>
     <li><a href="CompraCoche.php">Comprar Coche</a></li>
     <li><a href="ReservaCoche.php">Vehículos Reservados</a></li>
-    <li><a href="#">Nosotros</a></li>
-    <li><a href="#">Contacto</a></li>
+    <li><a href="Nosotros.php">Nosotros</a></li>
+    <li><a href="Contacto.php">Contacto</a></li>
 
     
 
@@ -125,18 +128,18 @@ $conn->close();
             <li><a href="flocars.php"><img class="foto2" src="Diseño_Logos/Diseño Logo Flocars Fondo.png" alt="Logo Flocars"></a></li>
             <li class="menu-desplegable">
                 <a class="simbolo-menu"href="#">
-                <i class="fa fa-bars"></i> <!-- Ícono de usuario -->
+                <i class="fa fa-bars"></i> 
                 </a>
                 <ul class="sub-menu">
                     <li><a href="CompraCoche.php">Comprar Coche</a></li>
                     <li><a href="ReservaCoche.php">Vehículos Reservados</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="Nosotros.php">Nosotros</a></li>
+                    <li><a href="Contacto.php">Contacto</a></li>
                 </ul>
             </li>
             <li class="menu-desplegable">
                 <a class="simbolo-usuario" href="#">
-                    <i class="fa fa-user"></i> <!-- Ícono de usuario -->
+                    <i class="fa fa-user"></i> 
                 </a>
                 <ul class="sub-menu">
                     <li><a href="Registro.php">Registrarme</a></li>
@@ -185,12 +188,12 @@ $conn->close();
         </select>
 
         <label class="filtro" for="km_range">Kilómetros:</label>
-        <div id="km_range"></div> <!-- Solo el slider de kilómetros -->
+        <div id="km_range"></div> 
         <input type="hidden" id="km_min" name="km_min" value="<?php echo $km_min; ?>">
         <input type="hidden" id="km_max" name="km_max" value="<?php echo $km_max; ?>">
 
         <label class="filtro" for="anio_range">Año:</label>
-        <div id="anio_range"></div> <!-- Solo el slider de años -->
+        <div id="anio_range"></div> 
         <input type="hidden" id="anio_min" name="anio_min" value="<?php echo $anio_min; ?>">
         <input type="hidden" id="anio_max" name="anio_max" value="<?php echo $anio_max; ?>">
 
@@ -257,12 +260,11 @@ $conn->close();
         tooltips: true,
         format: {
             to: (value) => {
-                // Formatear el valor con un punto como separador de miles
-                return value.toLocaleString('es-ES');  // Esto agrega el separador de miles
+                return value.toLocaleString('es-ES'); 
             },
             from: (value) => {
-                // Eliminar los puntos del valor para enviarlo correctamente
-                return Number(value.replace(/\./g, ''));  // Remueve puntos y convierte a número
+               
+                return Number(value.replace(/\./g, ''));  
             }
         }
     });
@@ -284,23 +286,21 @@ $conn->close();
         }
     });
 
-    // Asegurarse de que los valores del slider se copien en los campos hidden antes de enviar el formulario
+
     document.querySelector("form").addEventListener("submit", function(e) {
-        // Prevenir el envío del formulario si los valores no están correctamente actualizados
+        
         e.preventDefault(); 
 
-        // Obtener los valores actuales de los sliders
         const kmValues = kmSlider.noUiSlider.get();
         const anioValues = anioSlider.noUiSlider.get();
 
-        // Asignar esos valores a los campos hidden
-        document.getElementById("km_min").value = kmValues[0].replace(/\./g, '');  // Eliminar puntos
-        document.getElementById("km_max").value = kmValues[1].replace(/\./g, '');  // Eliminar puntos
+  
+        document.getElementById("km_min").value = kmValues[0].replace(/\./g, '');  
+        document.getElementById("km_max").value = kmValues[1].replace(/\./g, '');  
 
         document.getElementById("anio_min").value = anioValues[0];
         document.getElementById("anio_max").value = anioValues[1];
 
-        // Ahora enviar el formulario
         this.submit();
     });
 </script>
